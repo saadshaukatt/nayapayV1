@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nayapayV1", "nayapayV1\nayapayV1.csproj", "{D0DFD48D-299D-4A21-A7A4-2DCF3DEC43AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0DFD48D-299D-4A21-A7A4-2DCF3DEC43AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0DFD48D-299D-4A21-A7A4-2DCF3DEC43AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0DFD48D-299D-4A21-A7A4-2DCF3DEC43AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0DFD48D-299D-4A21-A7A4-2DCF3DEC43AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D23B073-92F6-4BC0-A998-F09A4B225A30}
+	EndGlobalSection
+EndGlobal
