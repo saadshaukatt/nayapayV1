@@ -78,9 +78,10 @@ namespace nayapayV1
 
         public void Gototitle3(string selectListOption)
         {
-            By title2 = By.XPath("/html/body/div/nav/div/div[2]/ul/li[3]/a");
+            dr.FindElement(By.CssSelector("ul#w1>li:nth-of-type(3)>a")).Click();
+            /*By title2 = By.XPath("/html/body/div/nav/div/div[2]/ul/li[3]/a");
             
-            dr.FindElement(title2).Click();
+            dr.FindElement(title2).Click();*/
 
             string exp_title = "NayaPay | " + selectListOption;
 
@@ -94,9 +95,10 @@ namespace nayapayV1
 
         public void Gototitle4(string selectListOption)
         {
-            By title2 = By.XPath("/html/body/div/nav/div/div[2]/ul/li[4]/a");
+            /*By title2 = By.XPath("/html/body/div/nav/div/div[2]/ul/li[4]/a");
 
-            dr.FindElement(title2).Click();
+            dr.FindElement(title2).Click();*/
+            dr.FindElement(By.CssSelector("ul#w1>li:nth-of-type(4)>a")).Click();
 
 
             string exp_title = "NayaPay | "+ selectListOption ;
@@ -112,10 +114,10 @@ namespace nayapayV1
 
         public void biggreenbtn()
         {
-            By title2 = By.XPath("/html/body/div/nav/div/div[2]/ul/li[5]/a");
+            /* By title2 = By.XPath("/html/body/div/nav/div/div[2]/ul/li[5]/a");
 
-            dr.FindElement(title2).Click();
-
+             dr.FindElement(title2).Click();*/
+            dr.FindElement(By.CssSelector("ul#w1>li:nth-of-type(5)>a")).Click();
 
             string exp_title = "NayaPay | Waitlist";
             string act_title = dr.Title;
