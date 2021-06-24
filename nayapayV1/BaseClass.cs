@@ -18,6 +18,7 @@ namespace nayapayV1
         {
             var driver = new ChromeDriver();
             dr = driver;
+           // _ = dr.Manage().Timeouts().ImplicitWait;
         }
     }
 }

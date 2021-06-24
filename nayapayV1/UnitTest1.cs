@@ -2,6 +2,7 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
 using System;
+using System.Threading;
 
 namespace nayapayV1
 {
@@ -94,7 +95,27 @@ namespace nayapayV1
             p1.Gototitle3("news");
             p1.Gototitle4("careers");
             p1.biggreenbtn();
+            Thread.Sleep(1000);
+            p1.Reserve();
+            Thread.Sleep(10000);
+            p1.Ename("saad");
+            Thread.Sleep(2000);
+            p1.Etel("03452381341");
+            Thread.Sleep(2000);
+            p1.Eemail("saad@abc.com");
+            Thread.Sleep(3000);
+            p1.ChooseOS("iPhone");
+           
 
+        }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            Thread.Sleep(2000);
+            p1.Gototitle4("careers");
+            Thread.Sleep(3000);
+            p1.Cwritterapply("saad shaukaut","abc@abc.com","03238294246","42101542323232323", "Other", "abcabcabc");
         }
     }
 }
