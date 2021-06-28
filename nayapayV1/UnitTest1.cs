@@ -1,7 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium;
 using System;
+using System.Linq;
 using System.Threading;
 
 namespace nayapayV1
@@ -73,7 +72,7 @@ namespace nayapayV1
             bc1.SelniumDriver();
             p1.Gotourl("https://dev.nayapay.com");
 
-           
+
         }
 
         [TestCleanup]
@@ -81,19 +80,20 @@ namespace nayapayV1
         {
             // MessageBox.Show("Test CleanUp");
             // AutoClosingMessageBox.Show("Test clean", "Caption", 1000);
-            
+
         }
 
         #endregion
 
 
-
+       
+      
         [TestMethod]
         public void TestMethod1()
         {
-            p1.Gototitle2("business");
+            p1.Gototitle2("Business");
             p1.Gototitle3("news");
-            p1.Gototitle4("careers");
+            p1.Gototitle4("Careers");
             p1.biggreenbtn();
             Thread.Sleep(1000);
             p1.Reserve();
@@ -105,7 +105,7 @@ namespace nayapayV1
             p1.Eemail("saad@abc.com");
             Thread.Sleep(3000);
             p1.ChooseOS("iPhone");
-           
+
 
         }
 
@@ -113,9 +113,86 @@ namespace nayapayV1
         public void TestMethod2()
         {
             Thread.Sleep(2000);
-            p1.Gototitle4("careers");
+            p1.Gototitle4("Careers");
             Thread.Sleep(3000);
-            p1.Cwritterapply("saad shaukaut","abc@abc.com","03238294246","42101542323232323", "Other", "abcabcabc");
+            p1.Cwritterapply(p1.Randomname(5), p1.Randomemail(4), p1.Randomnumber(11), p1.Randomcnic(17), "Other", p1.Randomlinkedin(5));
         }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            Thread.Sleep(2000);
+            p1.Gototitle4("Careers");
+            Thread.Sleep(3000);
+            p1.Devopsrapply(p1.Randomname(5), p1.Randomemail(4), p1.Randomnumber(11), p1.Randomcnic(17), "Other", p1.Randomlinkedin(5));
+        }
+
+        [TestMethod]
+        public void TestMethod4()
+        {
+            Thread.Sleep(2000);
+            p1.Gototitle4("Careers");
+            Thread.Sleep(3000);
+            p1.Teamleadaply(p1.Randomname(5), p1.Randomemail(4), p1.Randomnumber(11), p1.Randomcnic(17), "Other", p1.Randomlinkedin(5));
+        }
+
+
+
+        [TestMethod]
+        public void TestMethod5()
+        {
+            Thread.Sleep(2000);
+            p1.Gototitle4("Careers");
+            Thread.Sleep(3000);
+            p1.Fraudmanagerapply(4, p1.Randomname(5), p1.Randomemail(4), p1.Randomnumber(11), p1.Randomcnic(17), "Other", p1.Randomlinkedin(5));
+
+        }
+
+
+        [TestMethod]
+        public void TestMethod6()
+        {
+            Thread.Sleep(3000);
+            p1.Marketingapply(5, p1.Randomname(5), p1.Randomemail(4), p1.Randomnumber(11), p1.Randomcnic(17), "Other", p1.Randomlinkedin(5));
+
+        }
+
+        [TestMethod]
+        public void TestMethod7()
+        {
+            Thread.Sleep(3000);
+            p1.Strategyapply(6 , p1.Randomname(5), p1.Randomemail(4), p1.Randomnumber(11), p1.Randomcnic(17), "Other", p1.Randomlinkedin(5));
+
+        }
+
+
+        [TestMethod]
+        public void TestMethod8()
+        {
+            Thread.Sleep(3000);
+            p1.Productapply(7, p1.Randomname(5), p1.Randomemail(4), p1.Randomnumber(11), p1.Randomcnic(17), "Other", p1.Randomlinkedin(5));
+
+        }
+
+
+        [TestMethod]
+        public void TestMethod9()
+        {
+            Thread.Sleep(3000);
+            p1.Brandapply(8, p1.Randomname(5), p1.Randomemail(4), p1.Randomnumber(11), p1.Randomcnic(17), "Other", p1.Randomlinkedin(5));
+
+        }
+
+
+
+        [TestMethod]
+        public void TestMethod10()
+        {
+            p1.Gototitle3("News");
+            p1.LinksforNews();
+
+        }
+
+
     }
 }
